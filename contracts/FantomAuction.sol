@@ -2,13 +2,13 @@
 
 pragma solidity 0.6.12;
 
-import "@openzeppelin/contracts/math/SafeMath.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol";
+import "./openzeppelin/SafeMath.sol";
+import "./openzeppelin/IERC20.sol";
+import "./openzeppelin/SafeERC20.sol";
+import "./openzeppelin/IERC721.sol";
+import "./openzeppelin/OwnableUpgradeable.sol";
+import "./openzeppelin/AddressUpgradeable.sol";
+import "./openzeppelin/ReentrancyGuardUpgradeable.sol";
 
 interface IFantomAddressRegistry {
     function artion() external view returns (address);

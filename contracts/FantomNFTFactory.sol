@@ -2,7 +2,7 @@
 
 pragma solidity 0.6.12;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "./openzeppelin/Ownable.sol";
 import "./FantomNFTTradable.sol";
 
 contract FantomNFTFactory is Ownable {

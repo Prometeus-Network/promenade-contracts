@@ -2,8 +2,8 @@
 
 pragma solidity 0.6.12;
 
-import "@openzeppelin/contracts/introspection/IERC165.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "./openzeppelin/IERC165.sol";
+import "./openzeppelin/Ownable.sol";
 
 contract FantomAddressRegistry is Ownable {
     bytes4 private constant INTERFACE_ID_ERC721 = 0x80ac58cd;

@@ -2,8 +2,8 @@ pragma solidity 0.6.12;
 
 import './IERC165.sol';
 import './IERC1155TokenReceiver.sol';
-import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
+import "../openzeppelin/Address.sol";
+import "../openzeppelin/SafeMath.sol";
 /**
  * @dev Implementation of Multi-Token Standard contract
  */
