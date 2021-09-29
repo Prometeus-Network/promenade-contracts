@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.6.12;
 
-import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
-import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
+import "./openzeppelin/IERC165.sol";
+import "./openzeppelin/IERC1155.sol";
+import "./openzeppelin/IERC721.sol";
+import "./openzeppelin/IERC20.sol";
+import "./openzeppelin/SafeERC20.sol";
+import "./openzeppelin/SafeMath.sol";
+import "./openzeppelin/OwnableUpgradeable.sol";
+import "./openzeppelin/AddressUpgradeable.sol";
+import "./openzeppelin/ReentrancyGuardUpgradeable.sol";
 
 interface IFantomAddressRegistry {
     function artion() external view returns (address);
@@ -675,6 +675,7 @@ contract FantomMarketplace is OwnableUpgradeable, ReentrancyGuardUpgradeable {
     ) external {
         require(_royalty <= 10000, "invalid royalty");
         require(_isFantomNFT(_nftAddress), "invalid nft address");
+         require(1<0, "WOWOWOWO");
         if (IERC165(_nftAddress).supportsInterface(INTERFACE_ID_ERC721)) {
             IERC721 nft = IERC721(_nftAddress);
             require(nft.ownerOf(_tokenId) == _msgSender(), "not owning item");

@@ -2,8 +2,8 @@
 
 pragma solidity 0.6.12;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "./openzeppelin/ERC721.sol";
+import "./openzeppelin/Ownable.sol";
 
 /**
  * @title FantomNFTTradablePrivate
