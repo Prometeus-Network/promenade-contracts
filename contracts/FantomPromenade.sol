@@ -6,7 +6,7 @@ import "./openzeppelin/ERC721.sol";
 import "./openzeppelin/Context.sol";
 import "./openzeppelin/Ownable.sol";
 
-contract Artion is ERC721("Artion", "ART"), Ownable {
+contract Promenade is ERC721("Promenade", "PROD"), Ownable {
 
     /// @dev Events of the contract
     event Minted(
